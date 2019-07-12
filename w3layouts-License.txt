@@ -52,4 +52,3 @@ NOTE : FREQUENTLY ASKED QUESTIONS
 10. Under which license you are providing these templates?
 
 	W3layouts templates are under Creative Commons Attribution 3.0 unported
-
