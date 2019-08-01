@@ -4,7 +4,8 @@
 <title>Mazao Safi</title>
 <!---->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="nav.css">	
 <!--for-mobile-apps-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -47,12 +48,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<ul class="nav1 nav nav-wil">
 								<li><a data-hover="Home" href="index.html">Home</a></li>
 								<li class="active"><a data-hover="About" href="about.html">About</a></li>
-								<li><a data-hover="Services" href="services.html" >Mazao Safi Market</a></li>
-								<li><a data-hover="Services" href="extension.html" >Mazao Safi Extension</a></li>
-								<li><a data-hover="Codes" href="codes.html">Supply Chain & Governance</a></li>
+								<li><a  href="services.html" >Mazao Safi Market</a></li>
+								<li><a  href="extension.html" >Mazao Safi Extension</a></li>
+								<li><div class="dropdown">
+								  <a href="supplychain.html" class="dropbtn">Supply Chain & Governance</a>
+								  <div class="dropdown-content">
+								  	<a  href="supplychain.html">Supply Chain & Governance</a>
+								    <a href="localgap.html">LocalGAP</a>
+								  </div>
+								</div></li>
 								<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
 								<li><a data-hover="Contact" href="contact.html">Contact</a></li>
-							</ul>
+
+								<ul>
 						</nav>
 								<!-- script-for-menu -->
 									<script>
@@ -131,7 +139,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<!--order-->
 				<div class="order-w3">
 					<div class="container">
-						<h3 class="tittle1"> Order our Services</h3>
+						<h3 class="tittle1"> Order our Product</h3>
 						<div class="order-grids">
 							<div class="col-md-6 order-grid">
 								<img src="images/tr.jpg" class="img-responsive gray" alt=""/>
