@@ -47,7 +47,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<ul class="nav1 nav nav-wil">
 								<li><a data-hover="Home" href="index.html">Home</a></li>
 								<li><a data-hover="About" href="about.html">About</a></li>
-								<li><a data-hover="Services" href="services.html" >Mazao Market</a></li>
+								<li><a data-hover="Services" href="services.html" >Services</a></li>
 								<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
 								<li><a data-hover="Codes" href="codes.html">Codes</a></li>
 								<li><a data-hover="Contact" href="contact.html">Contact</a></li>
@@ -71,50 +71,93 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!--banner-->
 		<!--content-->
 		<div class="content">
-			<!--services-->
-				<div class="services-agile">
+			
+			
+			<!--order-->
+				<div class="order-w3">
 					<div class="container">
-						<h2 class="tittle">Mazao Safi Farmer Extension</h2>
-						<div class="service-grids">
-							<div class="col-md-5 service-grid ser-bottom">
-								<center><a href="requestextension.html"><h3><b style="color: blue">Click Here</b> To Request Extension Services</h3></a></center><br>
-								<h4>Our Service Packages</h4>
-								<p></p>
+						<h3 class="tittle1"> Request Extension Services</h3>
+						<div class="order-grids">
+							<div class="col-md-6 order-grid">
+								<img src="images/tr.jpg" class="img-responsive gray" alt=""/>
 							</div>
-							<div class="col-md-12 service-grid1">
-								<img src="images/rasta.jpg" class="img-responsive gray" alt=""/>
-							</div>
-						<div class="clearfix"></div>
-						</div>
-
-						<div class="service-grids">
-							<div class="col-md-5 service-grid ser-bottom">
-								<h4>Mazao Safi Criterion</h4>
-								<p></p>
-							</div>
-							<div class="col-md-12 service-grid1">
-								<img src="images/criteria.jpg" class="img-responsive gray" alt=""/>
-							</div>
-						<div class="clearfix"></div>
-						</div>
-
-						<div class="service-grids">
-							<div class="col-md-5 service-grid ser-bottom">
-								<h4>Geographical Infographics</h4>
-								<p></p>
-							</div>
-							<div class="col-md-12 service-grid1">
-								<img src="images/map.jpg" class="img-responsive gray" alt=""/>
-							</div>
-						<div class="clearfix"></div>
+							<div class="col-md-6 order-grid">
+								<div class="cuisine">
+									<form action="#" method="post">
+										<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+										<input type="text" name="Location" value="Enter Your Location" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Restaurant name, Location, Area, Cuisine..';}" required="">
+									</form>
+								</div>
+								<div class="phone_email">
+									<form action="#" method="post">
+										<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+										<input type="text" name="Phone" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
+									</form>
+								</div>
+								<div class="phone_email1">
+									<form action="#" method="post">
+										<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+										<input type="mail" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+									</form>
+								</div>
+								<div class="clearfix"> </div>
+								<div class="agileits_reservation_grid">
+									<div  class="span1_of_1">
+										 <div class="book_date">
+											<form action="#" method="post">
+												<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+												<input class="date" id="datepicker" name="Text" type="text" value="01/01/2019" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '01/01/2019';}" required="">
+											</form>
+										 </div>					
+									</div>
+									<div class="span1_of_1">
+										 <!-- start_section_room -->
+										 <div class="section_room">
+											<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+											<select id="country" onchange="change_country(this.value)" class="frm-field required">
+												<option value="null">--Select Delivery Time--</option>
+												<option value="null">Morning</option>
+												<option value="null">Afternoon</option>         
+												<option value="AX">Evening</option>
+											</select>
+										 </div>	
+									 </div>
+									<div class="span1_of_1">
+										 <!-- start_section_room -->
+										 <div class="section_room">
+											<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+											<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
+												<option value="null">--Select product--</option>
+												<option value="null">Fruits</option>         
+												<option value="AX">Vegetables</option>
+												<option value="AX">Farm Extension</option>
+											</select>
+										 </div>	
+									</div>
+									<div class="span1_of_1">
+										<div class="date_btn">
+											<form action="" method="">
+												<input type="submit" value="Submit" />
+											</form>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								</div>
+									<!-- Calendar -->
+										<link rel="stylesheet" href="css/jquery-ui.css" />
+										<script src="js/jquery-ui.js"></script>
+										  <script>
+												  $(function() {
+													$( "#datepicker" ).datepicker();
+												  });
+										  </script>
+									<!-- //Calendar -->
+							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
-			<!--services-->
-			<!--mission-->
-			<div class="special-w3">
-			<!--  -->
-			<!--mission-->
+			<!--order-->
 		</div>
 		<!--content-->
 		<!--footer-->
@@ -178,7 +221,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>&copy; 2019 Mazao Safi. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+						<p>&copy; 2019 Mazao Safi. All rights reserved | Design by <a href="https://dataconsultancy.co.ke">Click Here</a></p>
 					</div>
 				</div>
 			</div>
